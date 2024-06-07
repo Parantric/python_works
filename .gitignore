@@ -1,0 +1,14 @@
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/tips.iml
+/.idea/vcs.xml
+*/__init__.py
+/.idea/*.iml
+/exception/__pycache__/*.pyc
+/media/mkv_json_msg.json
+/media/msg.json
+/media/demo.json
+/.idea/.name
