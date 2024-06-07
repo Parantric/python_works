@@ -129,23 +129,3 @@ def probe_media(file_name):
     print('总比特率(Mbps):', items['total_bit_rate'])
     print('---------------------------------------------------------------------')
 
-
-if __name__ == '__main__':
-    # media_path = r'F:\Home\Users\renjy\Videos\绝世武魂\demo'
-    media_path = r'E:\temp_transfer\ali_cloudy\阿里云盘Open\=================\绝世武魂\377.mkv'
-
-    if '\\' in media_path:
-        media_path = media_path.replace('\\', '/')
-    if os.path.exists(media_path):
-        print('---------------------------------------------------------------------')
-        if os.path.isdir(media_path):
-            files = os.listdir(media_path)
-            for file in files:
-                file_extension = os.path.splitext(file)[-1]
-                if file_extension in ['.mp4', '.MP4', '.mkv', '.MKV', '.avi', '.AVI', ]:
-                    media_file = os.path.join(media_path, file)
-                    probe_media(media_file)
-        else:
-            probe_media(media_path)
-    else:
-        print('【' + media_path + '】' + '路径不存在...')
